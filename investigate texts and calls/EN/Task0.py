@@ -30,3 +30,16 @@ Print messages:
 "Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
 """
 
+## Key: extract the according data from list
+incoming_number0 = texts(0)
+answering_number0 = texts(1)
+time0 = texts(2)
+print("First record of texts, {0} texts {1} at time {2}".format(incoming_number0,answering_number0,time0))
+
+incoming_number1 = calls(-4)
+answering_number1 = calls(-3)
+time1 = calls(-2)
+during = calls(-1)
+print("Last record of calls, {0} calls {1} at time {2}, lasting {3} seconds".format(incoming_number1,answering_number1,time1,during))
+
+
